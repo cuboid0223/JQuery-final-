@@ -1,0 +1,291 @@
+body {
+  /* box-sizing: border-box; */
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container a {
+  display: block;
+  text-decoration: none;
+  color: #444545;
+  color: inherit;
+}
+
+.container section {
+  margin-bottom: 70px;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-green {
+  color: #06cd9b;
+}
+
+.bgc-red {
+  background-color: red;
+}
+.bgc-gray {
+  background-color: #f9f6f9;
+}
+
+.mediaLinkBox {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-end;
+}
+.mediaLinkBox > li {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+.mediaLinkBox a {
+  margin-left: 4px;
+}
+.mediaLinkBox a:hover {
+  color: black;
+}
+
+.logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.navbarList > li {
+  margin-left: 20px;
+  padding: 10px;
+  color: #78d1bf;
+
+  position: relative;
+}
+
+.navbarList > li:hover {
+  color: #78d666;
+}
+
+.subList {
+  background-color: #fff;
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 4;
+}
+.subList > li {
+  padding-left: 10px;
+  color: inherit;
+}
+
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.banner__title {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+ background: rgba(0, 0, 0, 0.5);
+  padding-left: 100px;
+}
+
+.cardsBox {
+  padding: 10px;
+}
+.cardsBox__list {
+  display: flex;
+  justify-content: space-around;
+}
+.cardsBox__item {
+  width: 30%;
+  padding: 15px;
+  border-radius: 4px;
+  /* max-width: 350px; */
+  text-align: center;
+  transition: 0.7s;
+  cursor: pointer;
+  border-width: 0 2px 2px 2px;
+  border-style: none solid solid solid;
+  border-color: transparent #f5f6fa #f5f6fa #f5f6fa;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 10px 10px -10px #718093;
+}
+.cardsBox__item:hover {
+  box-shadow: 10px 15px 15px -10px #718093;
+}
+
+.cardsBox__item img {
+  display: inline-block;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.cardsBox__item > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cardsBox__item > p,
+.cardsBox__item > h5,
+.cardsBox__item > ul {
+  text-align: left;
+}
+
+.cardsBox__item > ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.table {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+.table tr {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.formBox {
+  padding: 20px;
+  background: linear-gradient(#00644b, #009872);
+}
+
+.formBox > form {
+  display: flex;
+}
+
+.formBox textarea {
+  min-width: 500px;
+  flex: 0.5;
+}
+
+.formBox .inputBox {
+  flex: 0.5;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inputBox label {
+  color: white;
+}
+.inputBox input {
+  padding: 5px;
+}
+.inputBox > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 100px;
+  align-self: flex-end;
+}
+
+.footer {
+  padding: 10px;
+}
+.footer .logo {
+  width: 171px;
+  height: 36px;
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+}
+
+.footer li {
+  display: flex;
+}
+
+.footer li a {
+  color: red;
+  margin-left: 4px;
+}
+.footer li a:hover {
+  color: black;
+}
+
+.setting-box {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: whitesmoke;
+  color: #fff;
+  padding: 20px;
+
+  opacity: 0.3;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.setting-box:hover {
+  opacity: 1;
+}
+
+.font-box {
+  position: fixed;
+  right: 20px;
+  padding: 15px;
+  bottom: 100px;
+  background-color: #fefefe;
+  box-shadow: 0px 10px 10px -10px #718093;
+  transform: translateX(300px);
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.font-btn {
+  margin-bottom: 20px;
+}
+
+.font-box-active {
+  transform: translateX(0px);
+}
+
+.font-box__list {
+  display: flex;
+}
+
+.btn-fs {
+  padding: 10px;
+}
+
+.btn-fs:hover {
+  background-color: whitesmoke;
+}
